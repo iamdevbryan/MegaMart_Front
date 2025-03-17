@@ -47,7 +47,7 @@ function ProductsView({user, fetchCart, category}){
             key={product.id}
             id={product.id}
             title={product.name}
-            image={`http://localhost:8000${product.image}`}
+            image={`https://megamart-cm02.onrender.com/${product.image}`}
             price={product.discounted_price}
             true_price={product.price}
             seller={product.shop_name}
@@ -65,7 +65,7 @@ function ProductsView({user, fetchCart, category}){
           price={selectedProduct.discounted_price}
           seller={selectedProduct.shop_name}
           description={selectedProduct.description}
-          image={`http://localhost:8000${selectedProduct.image}`}
+          image={`https://megamart-cm02.onrender.com/${selectedProduct.image}`}
           onClose={handleClosePopup}
           onAddToCart={handleAddToCart}
           fetchCart={fetchCart}
