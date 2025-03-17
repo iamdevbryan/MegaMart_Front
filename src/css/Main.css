@@ -1,0 +1,39 @@
+.main{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.greetings{
+    width: 93%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.greetings h1{
+    font-size: 2em;
+    color: rgb(66, 66, 66);
+}
+
+.greetings h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    margin-top: -20px;
+}
+
+.categories{
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}

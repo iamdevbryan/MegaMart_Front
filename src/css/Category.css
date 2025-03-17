@@ -1,0 +1,18 @@
+.category{
+    width: 93%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.category .category-title{
+    font-size: medium;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+}
+
+.category .products{
+    display: flex;
+}

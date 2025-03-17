@@ -1,0 +1,271 @@
+.header{
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    font-family: 'inter', sans-serif;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameApp{
+    font-size: x-large;
+    font-weight: bold;
+    color: #008ECC;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    background-color: #F3F9FB;
+    border-radius: 10px;
+}
+
+.search-bar img:not(.search-bar form button img){
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+
+.search-bar form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: 300ms;
+}
+
+
+.search-bar form input{
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    width: 100%;
+    color: #6F6F6F;
+    font-family: 'inter';
+}
+
+.search-bar form input::placeholder{
+    color: #6F6F6F;
+}
+
+.search-bar form input:focus{
+    outline: none;
+}
+
+.search-bar:focus-within{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 300ms;
+}
+
+.search-bar form button{
+    border: none;
+    background-color: transparent;
+    border-left:1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+/* User Part */
+.cart{
+    margin-left: 20px;
+}
+
+.cart-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user{
+    margin-right: 120px;
+}
+
+.user, .cart {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.user  img, .cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.user h3, .cart h3 {
+    font-size: 12px;
+    margin-left: 5px;
+    color:#666666;
+    font-weight: 400;
+}
+
+
+
+
+.orderedProducts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #1799d0;
+    border-radius: 50%;
+    top: 0px;
+    left: 8px;
+    color: white;
+    font-size: small;
+}
+
+/* Logout  */
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    width: max-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 40px;
+    padding: 5px;
+    transition: 200ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.logout:hover{
+    background-color: #efefef;
+}
+
+
+/* Ordered Products */
+.order-container{
+    z-index: 500;
+    background-color: white;
+    width: 350px;
+    height: fit-content;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 60px;
+    left:-280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.order-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-title h1{
+    font-size: large;
+    font-weight: 600;
+    color: #151515;
+}
+
+.order-container table thead th{
+    font-size: small;
+    font-weight: 600;
+    color: #151515;
+    
+
+}
+
+.order-container table tbody tr{ 
+    margin-top: 60px;
+}
+
+.order-container table tbody tr td{
+    font-size: small;
+    font-weight: 400;
+    color: #151515;
+}
+
+
+.qte{text-align: center;}
+
+.remove-order{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(211, 69, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.total-price{
+    border-top: 1px solid #ccc;
+}
+
+.total-price h2{
+    font-size: small;
+    font-weight: 600;
+    color: #151515;
+}
+
+.order-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: #008ECC;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: rgb(211, 69, 69);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
