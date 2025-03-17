@@ -65,7 +65,7 @@ function ProductsView({user, fetchCart, category}){
           price={selectedProduct.discounted_price}
           seller={selectedProduct.shop_name}
           description={selectedProduct.description}
-          image={`https://megamart-cm02.onrender.com/${selectedProduct.image}`}
+          image={`https://megamart-cm02.onrender.com${selectedProduct.image}`}
           onClose={handleClosePopup}
           onAddToCart={handleAddToCart}
           fetchCart={fetchCart}
